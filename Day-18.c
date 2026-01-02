@@ -47,8 +47,28 @@ printf("Sum of digits is %d", sum);
 
 
 
+// Reverse of digits 
+int number, temp,sum, rem;
+sum = 0;
+printf("Enter the Number : ");
+scanf("%d", &number);
+temp = number;
+while (temp!=0)
+{
+    rem = temp %10;
+    sum = sum *10 + rem;
+    temp = temp/10;
+}
+printf("Reverse is : %d", sum);
 
+
+
+
+
+
+    
 
 
     return 0;
+
 }

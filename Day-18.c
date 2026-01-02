@@ -65,10 +65,35 @@ printf("Reverse is : %d", sum);
 
 
 
+// Palindrome or not (Original number = reverse number)
+int reverseNumber,originalNumber,sum,rem;
+sum = 0;
+printf("Enter the Number : ");
+scanf("%d", &originalNumber);
+reverseNumber = originalNumber;
+while (reverseNumber!=0)
+{
+    rem = reverseNumber%10;
+    sum = sum*10+rem;
+    reverseNumber = reverseNumber/10;
 
+}
+if(originalNumber==sum)
+printf("Palindrome");
+else{
+    printf("Not palindrome");
+}
+
+
+
+
+
+
+    
     
 
 
     return 0;
 
 }
+

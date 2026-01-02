@@ -88,12 +88,39 @@ else{
 
 
 
+// armstrong number (sum of digits in cube)
+int number,sum,rem, temp;
+sum = 0;
+printf("Enter the number : ");
+scanf("%d", &number);
+
+temp = number;
+while(temp!=0){
+
+    rem = temp%10;
+    sum = sum + rem*rem*rem;
+    temp = temp/10;
+
+}
+if(number==sum){
+    printf("armstrong number");
+}
+else{
+    printf("Not a armstrong number");
+}
 
     
+
+
+
+
+
+
     
 
 
     return 0;
 
 }
+
 
